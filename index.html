@@ -12,13 +12,30 @@ Click me to display Date and Time.</button>
 onclick="document.getElementById('demo').innerHTML = z">
 Click me to display z.</button>
 
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  Value A: <input type="number" name="x"><br>
+  Value B: <input type="number" name="y"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+
+    document.getElementById("frm1").submit();
+
+  
+  
 <script>
 var x = 5;
 var y = 2;
 var z = x * y;
 document.getElementById("demo").innerHTML = z;
+document.getElementById("demo").innerHTML =x;
+document.getElementById("demo").innerHTML =y;
+
 </script>
 
+  
 
 <p id="demo"></p>
 
