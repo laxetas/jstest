@@ -4,31 +4,32 @@
 
 <h2>JavaScript Test</h2>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Fecha</button>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Fecha</button> <br>
 
-<button type="button"
-onclick="document.getElementById('caja').value = z">
-Click me to display z.</button>
 
-Value A: <input id="caja" type="number" name="a"><br>
-    <button type="button" onclick="showc()">Resultado</button>
+Value A: <input id="caja" type="number">
+
+
+<button type="button" onclick="showc()">Resultado</button>
 
   
 <script>
 
-function showc{
-  x=document.getElementById("caja").value;
-  c=Number(x);  
-  document.getElementById("demo").innerHTML = c;
-}
+  function showc(){
+	var x=document.getElementById('caja');
+	z=x.value;
 
+	c=z+2;
+	a=Number(z)+2;
+    document.getElementById("demo").innerHTML = c;
+	document.getElementById("demo1").innerHTML = a;
+}
 </script>
 
   
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 </body>
 </html> 
