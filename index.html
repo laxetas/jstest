@@ -13,16 +13,16 @@ onclick="document.getElementById('demo').innerHTML = z">
 Click me to display z.</button>
 
 Value A: <input id="caja" type="number" name="a"><br>
-    <input type="button" onclick="showc()">Resultado</button>
+    <button type="button" onclick="showc()">Resultado</button>
 
   
 <script>
 
 function showc{
-  document.getElementById("caja").innerHTML = c;
+  x=document.getElementById("caja").value;
+  c=Number(x);  
+  document.getElementById("demo").innerHTML = c;
 }
-document.getElementById("demo").innerHTML = z;
-
 
 </script>
 
