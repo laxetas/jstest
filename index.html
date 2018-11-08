@@ -2,11 +2,11 @@
 <html>
 <body>
 
-<h2>My First JavaScript</h2>
+<h2>JavaScript Test</h2>
 
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+Fecha</button>
 
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = z">
@@ -14,27 +14,17 @@ Click me to display z.</button>
 
 <p>Enter names in the fields, then click "Submit" to submit the form:</p>
 
-Value A: <input type="number" name="a"><br>
-Value B: <input type="number" name="b"><br><br>
-<input type="button" onclick="showc()">
-</form>
+Value A: <input id="caja" type="number" name="a"><br>
+    <input type="button" onclick="showc()">Resultado</button>
 
-
-    document.getElementById("frm1").submit();
-
-  
   
 <script>
-var x = 5;
-var y = 2;
-var z = x * y;
-var a=8,b=7, c= a+b;
+
 function showc{
-  document.getElementById("demo").innerHTML = c;
+  document.getElementById("caja").innerHTML = c;
 }
 document.getElementById("demo").innerHTML = z;
-document.getElementById("demo").innerHTML =x;
-document.getElementById("demo").innerHTML =y;
+
 
 </script>
 
